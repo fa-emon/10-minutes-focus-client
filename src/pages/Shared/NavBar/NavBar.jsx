@@ -8,6 +8,7 @@ const NavBar = () => {
         <li><Link to={'/instructors'}>Instructors</Link></li>
         <li><Link to={'/classes'}>Classes</Link></li>
         <li><Link to={'/dashboard'}>Dashboard</Link></li>
+        <li><Link to={'/login'}>Login</Link></li>
     </>
 
     return (
@@ -21,7 +22,7 @@ const NavBar = () => {
                         {navOptions}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">10-Minutes-Focus</a>
+                <Link to={'/'} className="btn btn-ghost normal-case text-xl">10-Minutes-Focus</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
