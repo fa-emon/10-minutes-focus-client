@@ -1,4 +1,4 @@
-import icon from '../../../../public/icon.svg'
+import icon from '../../../assets/logo.svg'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

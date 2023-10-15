@@ -3,6 +3,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 import NavBar from "../pages/Shared/NavBar/NavBar";
 
 
+
 const Main = () => {
     const location = useLocation();
     const isOnErrorPage = location.pathname === "/errorPage";
