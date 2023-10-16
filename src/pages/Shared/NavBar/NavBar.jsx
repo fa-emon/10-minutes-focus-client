@@ -1,14 +1,37 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const NavBar = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const isUserLoggedIn = !!user;
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+
+            })
+            .catch((error) => {
+                console.log('error', error)
+            })
+    }
+
     const navOptions = <>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/instructors'}>Instructors</Link></li>
         <li><Link to={'/classes'}>Classes</Link></li>
-        <li><Link to={'/dashboard'}>Dashboard</Link></li>
-        <li><Link to={'/login'}>Login</Link></li>
+        {
+            user ?
+                <>
+                    <li><Link to={'/dashboard'}>Dashboard</Link></li>
+                    <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm">LogOut</button></li>
+                </> :
+                <>
+                    <li><Link to={'/login'}>Log in</Link></li>
+                    <li><Link to={'/register'}>Sign Up</Link></li>
+                </>
+        }
     </>
 
     return (
@@ -30,11 +53,13 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <img
-                    src="/path/to/user-profile-image.jpg" // Replace with the actual image path
-                    alt="User Profile"
-                    className="w-10 h-10 rounded-full mr-2"
-                />
+                { isUserLoggedIn && 
+                    <img
+                        src="/path/to/user-profile-image.jpg" // Replace with the actual image path
+                        alt="User Profile"
+                        className="w-10 h-10 rounded-full mr-2"
+                    />
+                }
             </div>
 
         </div>
