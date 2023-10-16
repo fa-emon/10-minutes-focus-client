@@ -2,24 +2,25 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
 const Register = () => {
-    const { register, handleSubmit, formState: { errors }, reset} = useForm();
-    const {createUser} = useContext(AuthContext);
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const { createUser } = useContext(AuthContext);
 
     const onSubmit = (data) => {
         // console.log(data)
         reset();
 
         createUser(data.email, data.password)
-        .then((result) => {
-            const loggedUser = result.user;
-            console.log(loggedUser)
-        })
-        .catch((error) => {
-            console.error('error', error)
-        })
+            .then((result) => {
+                const loggedUser = result.user;
+                console.log(loggedUser)
+            })
+            .catch((error) => {
+                console.error('error', error)
+            })
     }
 
     return (
@@ -47,6 +48,17 @@ const Register = () => {
                             <input type="email" {...register("email", { required: true })} name="email" placeholder="Email" className="input input-bordered" />
                             {errors.email && <span className="text-red-600">Email is required</span>}
                         </div>
+
+                        {/* {photo URL field} */}
+                        <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo URL</span>
+                                </label>
+                                <input type="text"
+                                    {...register('photoURL', { required: true })}
+                                    placeholder="photo URL" className="input input-bordered" />
+                                {errors.photoURL && <p className='text-red-500'>photo URL is required.</p>}
+                            </div>
 
                         {/* {password field} */}
                         <div className="form-control">
@@ -83,6 +95,7 @@ const Register = () => {
                             <input className="btn btn-primary" type="submit" value="Sign Up" />
                         </div>
                         <p className='text-[#D1A054] font-medium text-xl text-center'><small>Already have an account? <Link to={'/login'}>LOG IN</Link></small></p>
+                        <SocialLogin></SocialLogin>
                     </form>
                 </div>
             </div>
