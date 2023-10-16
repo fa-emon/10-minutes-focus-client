@@ -3,20 +3,42 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUserProfile } = useContext(AuthContext);
+    
+    const navigate = useNavigate();
 
     const onSubmit = (data) => {
-        // console.log(data)
+        console.log(data)
         reset();
 
         createUser(data.email, data.password)
             .then((result) => {
                 const loggedUser = result.user;
-                console.log(loggedUser)
+                console.log(loggedUser);
+
+                //After user creation, update their profile
+                updateUserProfile(data.name, data.photoURL)
+                .then(() => {
+                    console.log('User Profile Updated Successfully.')
+                    reset();
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'User Profile Updated Successfully.',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                      navigate("/");
+                })
+                .catch((error) => {
+                    console.error('Error updating user profile:', error);
+                })
             })
             .catch((error) => {
                 console.error('error', error)
