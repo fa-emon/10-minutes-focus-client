@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "name": "Jessica Anderson",
+        "totalStudents": 80,
+        "picture": "../src/assets/PopularInstructors image/1.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb2",
+        "name": "Mike Johnson",
+        "totalStudents": 75,
+        "picture": "../src/assets/PopularInstructors image/2.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "name": "Emily Harris",
+        "totalStudents": 70,
+        "picture": "../src/assets/PopularInstructors image/3.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "David White",
+        "totalStudents": 65,
+        "picture": "../src/assets/PopularInstructors image/4.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "name": "Sophia Miller",
+        "totalStudents": 60,
+        "picture": "../src/assets/PopularInstructors image/5.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Emma Wilson",
+        "totalStudents": 55,
+        "picture": "../src/assets/PopularInstructors image/6.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "name": "Daniel Clark",
+        "totalStudents": 50,
+        "picture": "../src/assets/PopularInstructors image/7.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "name": "Olivia Lee",
+        "totalStudents": 45,
+        "picture": "../src/assets/PopularInstructors image/8.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Benjamin Smith",
+        "totalStudents": 40,
+        "picture": "../src/assets/PopularInstructors image/9.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "name": "Liam Taylor",
+        "totalStudents": 35,
+        "picture": "../src/assets/PopularInstructors image/10.jpg"
+    }
+]
