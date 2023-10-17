@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "className": "Yoga for Beginners",
+        "enrolledStudents": 48,
+        "availability": 20,
+        "price": 19.99,
+        "instructorName": "Jessica Anderson",
+        "picture": "../src/assets/PopularClasses image/1.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb2",
+        "className": "High-Intensity Interval Training",
+        "enrolledStudents": 30,
+        "availability": 15,
+        "price": 24.99,
+        "instructorName": "Mike Johnson",
+        "picture": "../src/assets/PopularClasses image/8.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "className": "Pilates for Strength",
+        "enrolledStudents": 62,
+        "availability": 30,
+        "price": 21.99,
+        "instructorName": "Emily Harris",
+        "picture": "../src/assets/PopularClasses image/3.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "className": "Cardio Kickboxing",
+        "enrolledStudents": 45,
+        "availability": 25,
+        "price": 22.99,
+        "instructorName": "David White",
+        "picture": "../src/assets/PopularClasses image/4.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "className": "Meditation and Mindfulness",
+        "enrolledStudents": 55,
+        "availability": 40,
+        "price": 18.99,
+        "instructorName": "Sophia Miller",
+        "picture": "../src/assets/PopularClasses image/5.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "className": "Aerobics for Cardio",
+        "enrolledStudents": 34,
+        "availability": 10,
+        "price": 26.99,
+        "instructorName": "Emma Wilson",
+        "picture": "../src/assets/PopularClasses image/6.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "className": "Zumba Dance Party",
+        "enrolledStudents": 65,
+        "availability": 35,
+        "price": 18.99,
+        "instructorName": "Daniel Clark",
+        "picture": "../src/assets/PopularClasses image/7.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "className": "Strength and Conditioning",
+        "enrolledStudents": 75,
+        "availability": 15,
+        "price": 29.99,
+        "instructorName": "Olivia Lee",
+        "picture": "../src/assets/PopularClasses image/2.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "className": "Pilates for Core Strength",
+        "enrolledStudents": 40,
+        "availability": 20,
+        "price": 21.99,
+        "instructorName": "Benjamin Smith",
+        "picture": "../src/assets/PopularClasses image/9.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "className": "Cycling Adventure",
+        "enrolledStudents": 52,
+        "availability": 18,
+        "price": 27.99,
+        "instructorName": "Liam Taylor",
+        "picture": "../src/assets/PopularClasses image/10.jpg"
+    }
+]
